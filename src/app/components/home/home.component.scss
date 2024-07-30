@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #FFF;
+  font-family: 'Roboto', sans-serif;
+
+  .container-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 16px;
+    padding: 20px;
+    width: 500px;
+    height: 625px;
+    background: linear-gradient(to bottom, rgba(98, 0, 234, 0.5), rgba(70, 0, 160, 1));
+    border-radius: 30px;
+
+    h1 {
+      color: rgb(191, 191, 191);
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .container-score {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 30px;
+      background: linear-gradient(to top, rgba(98, 0, 234, 0.5), rgba(70, 0, 160, 1));
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+
+      .score {
+        font-size: 70px;
+        color: white;
+      }
+
+      .total {
+        color: rgb(163, 158, 158);
+      }
+    }
+
+    h2 {
+      color: white;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-top: 20px;
+      color: rgb(177, 177, 177);
+      font-weight: 400;
+      font-size: 28px;
+      padding: 25px;
+    }
+  }
+
+  .container-summary {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fdfdfd;
+    width: 500px;
+    height: 620px;
+    border-radius: 20px 20px 20px 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 255, 0.15);
+
+    h1 {
+      color: rgb(5, 5, 38);
+      margin-left: 15px;
+    }
+
+    button {
+      background-color: #6200ea;
+      color: #ffffff;
+      border: none;
+      border-radius: 30px;
+      padding: 20px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #3700b3;
+      }
+
+      &:active {
+        background-color: #30009c;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(98, 0, 234, 0.5);
+      }
+    }
+
+    .container-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 75%;
+
+      .item-details {
+
+        width: 95%;
+        padding: 18px;
+        border-radius: 12px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+      }
+
+      .red {
+        background-color: rgba(255, 0, 0, 0.1);
+      }
+
+      .grn {
+        background-color: rgba(0, 255, 0, 0.1);
+      }
+
+      .ylw {
+        background-color: rgba(255, 255, 0, 0.1);
+      }
+
+      .prl {
+        background-color: rgba(128, 0, 128, 0.1);
+      }
+    }
+  }
+
+}
